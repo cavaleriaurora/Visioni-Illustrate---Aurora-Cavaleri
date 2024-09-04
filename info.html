@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+  <title>Visioni Illustrate</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artisti.html">Artisti</a></li>
+        <li><a href="mostra.html">Mostra</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Cerca...">
+        <button type="button" class="search-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="7" stroke="#FFFFFF" stroke-width="2"/>
+            <line x1="16" y1="16" x2="21" y2="21" stroke="#FFFFFF" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>Informazioni Generali</h2>
+      <p><b>Visioni Illustrate</b> è una mostra di illustrazione contemporanea che si tiene presso la nostra sede principale. La mostra esplora la <b>diversità</b> e la <b>ricchezza</b> dell'illustrazione attraverso una selezione curata di opere di artisti da tutto il mondo.</p>
+
+      <h3 onclick="toggleSection('indirizzo-section')">Indirizzo e Come Arrivare</h3>
+      <div id="indirizzo-section" class="info-section">
+        <p>La mostra si terrà presso la sede dell'<b>Accademia di Belle Arti</b> in <b>Via Raimondo Franchetti, 5, 95123 Catania CT</b>.</p>
+        <p>È possibile prendere l'autobus numero 5 o la metropolitana linea 1 fino alla fermata <b>"Accademia"</b>. Parcheggi pubblici disponibili nelle vicinanze.</p>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.99814275972!2d15.088792!3d37.5157597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313d0114015ff03%3A0x4b2a93772819cb50!2sAccademia%20di%20Belle%20Arti!5e0!3m2!1sit!2sit!4v1632165982649!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <h3 onclick="toggleSection('orari-section')">Orari di Apertura</h3>
+      <div id="orari-section" class="info-section">
+        <p><b>Lun-Ven:</b> 10:00 - 18:00</p>
+        <p><b>Sab-Dom:</b> 10:00 - 20:00</p>
+        <p><b>La biglietteria chiude un'ora prima</b></p>
+      </div>
+
+      <h3 onclick="toggleSection('biglietti-section')">Biglietti</h3>
+      <div id="biglietti-section" class="info-section">
+        <p><b>Ingresso gratuito</b> 
+        <p>Prenotazione consigliata per gruppi e scuole.</p>
+      </div>
+
+      <h3 onclick="toggleSection('laboratorio-section')">Laboratorio dedicato ai bambini</h3>
+      <div id="laboratorio-section" class="info-section">
+        <p>Il <b>laboratorio creativo per bambini</b> è un'avventura artistica pensata per stimolare l'immaginazione e la creatività dei più piccoli. Attraverso attività manuali, disegno e pittura, i bambini avranno l'opportunità di esplorare diverse tecniche artistiche in un ambiente divertente e accogliente.</p>
+        <p>Guidati da istruttori esperti, impareranno a esprimere le proprie idee e emozioni creando opere d'arte uniche. Questo workshop è progettato non solo per sviluppare le abilità artistiche, ma anche per incoraggiare il lavoro di squadra, la fiducia in sé e l'apprezzamento per l'arte.</p>
+        <p>Un'esperienza educativa e coinvolgente, perfetta per liberare la <b>fantasia</b> e il <b>talento</b> di ogni bambino.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="">Privacy</a>
+          <a href="">Social</a>
+          <a href="info.html">Info</a>
+        </div>
+      </div>
+  
+
+      <div class="footer-center">
+        <div class="footer-address">
+          <p><b>INDIRIZZO</b></p>
+          <p>Accademia di Belle Arti di Catania</p>
+          <p>Via Raimondo Franchetti, 5, 95123 Catania CT</p>
+        </div>
+        <div class="footer-contacts">
+          <p><b>CONTATTI</b></p>
+          <p>Telefono: 0952191420</p>
+        </div>
+      </div>
+  
+      <div class="footer-right">
+        <div class="footer-newsletter">
+          <h2>Iscriviti alla nostra Newsletter</h2>
+          <form action="path_to_your_newsletter_subscription_script" method="POST" class="newsletter-form">
+            <input type="email" name="email" placeholder="Inserisci la tua email" required>
+            <button type="submit" class="btn-secondary">Iscriviti</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Accademia di Belle Arti di Catania.</p>
+    </div>
+  </footer>
+  
